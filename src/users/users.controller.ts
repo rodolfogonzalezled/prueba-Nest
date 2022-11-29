@@ -20,9 +20,8 @@ export class UsersController {
   @Get()
   async findAll(@Request() req) {
     const {limit} = req.query;
-    // console.log(this.configService.get<string>('PAPA'))
     const users = await this.usersService.findAll(+limit);
-    return {status:"Listo Rodolfo", users}
+    return {status:"SUCCESS USERS", users}
   }
 
   @Get(':id')
