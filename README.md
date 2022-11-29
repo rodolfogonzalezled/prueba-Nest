@@ -19,20 +19,34 @@
     <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
   <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+
 
 ## Description
 
-Crear archivo .env con la URL_MONGO = colocar la url de mongo
-Para probar las peticiones CRUD utilice postman.(Update correspondiente a PUT, es PATCH)
-la estructura para la base de datos de usuarios es:
+- Crear archivo .env con la URL_MONGO = colocar la url de mongo
+- Para probar las peticiones CRUD utilice postman.(Update correspondiente a PUT, es PATCH)
+
+- La estructura para la base de datos de usuarios es:
+
+```
 {
     "first_name": " ",
     "last_name": " ",
     "email": " ",
     "password": " "
 }
+```
+
+- La estructura para la base de datos de productos es:
+```
+{
+    "name": "",
+    "price": "",
+    "description": "",
+    "photo": "",
+    "stock": ""
+}
+```
 
 ## Installation
 
@@ -52,20 +66,3 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
